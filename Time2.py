@@ -4,22 +4,17 @@ import datetime as dt
 
 name = input("Enter Your Name :")
 Recenttime = time.strftime('%H :%M')
-recenttime = time.strftime("%H")
+recenttime = int(time.strftime("%H"))
 
 
 
 
-if recenttime=="<=4" or "<12" :
-    print("Good Morningh" , name ,"The Time Right Now Is " , Recenttime)
-elif recenttime==">=12" or "< 16" :
-     print("Good Afternoon" , name , "The Time Right Now Is" , Recenttime)
-elif recenttime==">=16" or "< 20" :
-    print("Good Evening" , name , "The Time Right Now Is" , Recenttime)
-elif recenttime==">= 20" or "> 4" : 
-    print("Good Night" , name , "The Time Right Now is " , Recenttime) 
+if recenttime == "<= 4" and "> 12":
+    print("Good Morning" , name , "the Time Right Now is" , Recenttime)
+elif recenttime ==  ">= 12"and "> 17":
+    print("Good AfterNoon" , name , "the Time Right Now is" , Recenttime)
+elif recenttime == ">= 17"and ">20":
+    print("Good Evening" , name , "the Time Right Now is" , Recenttime)
 else :
-    input("Enter 1 To Retry The Program")
-    for i in range():
-        RuntimeError
-
+    print("Good Night" , name , "the Time Right Now is" , Recenttime)
 

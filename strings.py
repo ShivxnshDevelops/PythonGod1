@@ -7,3 +7,4 @@ print(K[0 : 86])
 
 print(" Day 3 Of Mastering python in 30 bDays ")
 # Now We Are Going to learn Abt Srt sLICING aNDF OTHERE Things 
+
