@@ -19,7 +19,6 @@
 
 
 
-
 # Match Cases File 
 x = int(input("Enter The Shell No.Of The Atomic Structure :"))
 
@@ -40,7 +39,7 @@ match x:
     case _:
             while(x>4):
                  x = int(input("Please ReEnter The Shell No.Of The Atomic Structure :"))
-                 while(x=="1" , "2" , "3" , "4"):
+                 while true if (x=="1" , "2" , "3" , "4"):
                       match x:
                      # If Case Is 1 Then
                          case 1:
@@ -60,5 +59,8 @@ match x:
                          case 4:
                              print("The No Of Atoms Can Be Stored In The Fourth Shell Are" ,  2*x**2)
                              x = x - 4
+                            
+                          
+                                 
                  
         

@@ -7,13 +7,20 @@
 # a = int(input("Enter The Value Of A :"))
 # b = int(input("Enter The Value Of B :"))
 # GreaterNx(a , b)
-
-def name(a , b):
-    print("heloo" , a , b)
-a = input("Enter The Values :")
-b = input("Enter The Values :")
-name(a , b)
+def name(a):
+    print("Hello , Dear" , a )
+    
 
 def multi(a , b):
-    x = a*b
-    print(x)
+    x = (a*b)
+    print("The Product Desired By You Is" , x)
+
+x = input("Enter The Username :")
+name(x)
+print("\b You Have Succesfully Logged In Ghouls Org ")
+
+a = int(input("Enter The Values :"))
+b = int(input("Enter The Values :"))
+multi(a , b)
+
+
