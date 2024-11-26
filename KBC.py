@@ -7,27 +7,52 @@ kbc_questions = [
     {
         "question": "What is the capital of India?",
         "options": ["Mumbai", "New Delhi", "Kolkata", "Chennai"],
-        
+        "correct_answer": "New Delhi"
     },
     {
         "question": "Who is known as the 'Missile Man of India'?",
         "options": ["APJ Abdul Kalam", "Vikram Sarabhai", "Homi Bhabha", "ISRO"],
-        
+        "correct_answer": "APJ Abdul Kalam"
     },
     {
         "question": "Which planet is known as the Red Planet?",
         "options": ["Earth", "Mars", "Jupiter", "Venus"],
-        
+        "correct_answer": "Mars"
     },
     {
         "question": "What is the national animal of India?",
         "options": ["Lion", "Tiger", "Elephant", "Peacock"],
-        
+        "correct_answer": "Tiger"
     },
     {
         "question": "Which Indian cricketer is also known as 'The Wall'?",
         "options": ["Sachin Tendulkar", "MS Dhoni", "Rahul Dravid", "Virat Kohli"],
-        
+        "correct_answer": "Rahul Dravid"
+    },
+    {
+        "question": "Which is the largest continent in the world?",
+        "options": ["Asia", "Africa", "Europe", "Antarctica"],
+        "correct_answer": "Asia"
+    },
+    {
+        "question": "What is the full form of 'www' in a website browser?",
+        "options": ["World Wide Web", "World Web Window", "Wide Web World", "Web World Wide"],
+        "correct_answer": "World Wide Web"
+    },
+    {
+        "question": "Who invented the light bulb?",
+        "options": ["Alexander Graham Bell", "Nikola Tesla", "Thomas Edison", "Albert Einstein"],
+        "correct_answer": "Thomas Edison"
+    },
+    {
+        "question": "What is the square root of 64?",
+        "options": ["6", "8", "10", "12"],
+        "correct_answer": "8"
+    },
+    {
+        "question": "Which gas do plants use in photosynthesis?",
+        "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+        "correct_answer": "Carbon Dioxide"
     }
 ]
 ans = ("New Delhi" , "APJ Abdul Kalam" , "Mars" , "Tiger" , "Rahul Dravid")
