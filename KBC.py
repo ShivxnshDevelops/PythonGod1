@@ -91,4 +91,4 @@ while (a=="Yes"):
         
 
 
-print("\nThank you for playing KBC! Goodbye!")
+print("\nThank you for playing KBC! Goodbye! \nAuthor Of The Program - Shiv4nsh Develops")
