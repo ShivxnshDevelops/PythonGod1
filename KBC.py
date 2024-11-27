@@ -55,7 +55,7 @@ kbc_questions = [
         "correct_answer": "Carbon Dioxide"
     }
 ]
-ans = ("New Delhi" , "APJ Abdul Kalam" , "Mars" , "Tiger" , "Rahul Dravid")
+ans = ("New Delhi" , "APJ Abdul Kalam" , "Mars" , "Tiger" , "Rahul Dravid", "Carbon Dioxide" , "8" , "Thomas Edison" , "World Wide Web" , "Asia")
 a = input("Do You Want To Play KBC In Python ? | Answer In Yes Or No - ")
 
 
@@ -67,6 +67,7 @@ while (a=="Yes"):
         print(f"  {idx}. {option}")
 
     # Taking User's Input For The Question
+    # And Locking The User's Input
     try:
         user_ans = input("Enter Your Answer :")
         lock_ans = input(f"You Seleected {user_ans} , Do You Want To Lock Your Answer (Yes / No) - ")
@@ -74,24 +75,20 @@ while (a=="Yes"):
             if lock_ans=="Yes":
                 print("🎉 Your answer is correct! You have won ₹10,000!")
                 a = input("Would You Like To Risk Your 10000 For The Next Round (Yes / No) - ")
-            else:
-                a = input(" Your Answer Is Incorrect \nDo You Want Enter In The Next Round Of KBC (Yes / No)")
+                if a=="No":
+                    break
         else:
-            a = input("Do You Want Enter In The Next ROund Of KBC (Yes / No - ")
+            if lock_ans=="Yes":
+                print("I am Feeling Bad To Tell You That Your Answer Is Wrong")
+                
+                a = input("Would You Like To Use Your Lifeline To Play For The Next Question ( Yes / No ) - ")
+                if a=="No":
+                    break
     except ValueError:
         a = input("Do You Want Enter In The Next ROund Of KBC (Yes / No) - ")
+        if a=="No":
+            break
         
-    # Locking The User's Input 
-    
-
-    # if lock_ans=="Yes":
-    #     if user_ans in ans:
-    #         print("🎉 Your answer is correct! You have won ₹10,000!")
-    #         a = input("Do You Want Enter In The Next ROund Of KBC (Yes / No)")
-            
-    #     else:
-    #         print(f"❌ Sorry, Your answer is wrong. ")
-    #         a = input("Do You Want Enter In The Next ROund Of KBC (Yes / No)")
 
 
 print("\nThank you for playing KBC! Goodbye!")
