@@ -1,0 +1,1 @@
+print("This Program Is Created For The F Strings Practice \nAuthor - Shiv4nsh xD")
