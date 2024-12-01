@@ -2,9 +2,10 @@ print("""To Do List By Shiv4nsh In Python
     Enter 1 If You Want To Check The Current ToDo List
     Enter 2 If Want To Add Something In Todo List 
     Enter 3 If You WAnt To Remove Something From The ToDo List
-    Enter 4 To Exit The Program""")
+    Enter 4 To Terminate The Program""")
 
-t = []
+t = {""}
+t.clear()
 # Display Function 
 def display():
     """This Function Is Used To Display The No. Of Tasks In Your ToDo List"""
@@ -19,13 +20,13 @@ def display():
 def add(a):
     """This Function Is Used To Add The Task In The ToDo List"""
     
-    t.append(a.strip())
+    t.update(a.strip()  for a in a.split(","))
     print(f'"{a}" has been added to your To-Do list.')
 
 # Remove Function
 def delete(a):
     """This Function Is Used To Remove The Task From The ToDo List"""
-    c = t.pop(a)
+    c = t.remove(a)
     print(f'"{c}" has been removed from your To-Do list.')
 
 # Main Loop 
@@ -44,6 +45,7 @@ while True:
     elif x==1:
         display()
     elif x==4:
+        print("The Program Is Terminated ")
         break
     else :
         raise ValueError("Invalid Input | Please read The Given Instructions CareFully ")
