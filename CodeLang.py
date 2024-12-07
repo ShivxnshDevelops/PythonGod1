@@ -29,27 +29,31 @@ def decode(a):
        
         
             core = a[2:-3]
-            print(core)
             og_msg = core[len(core) -1] + core[1:len(core) - 1] 
            
             print(f"The Decoded Messeage Of Your Secret {og_msg}")
         
 
 print("If Want To EnCode The Messeage Then Press $ \nIf YOu WAnt To Decode The Messegae Then Press # \nIf You Want o Terminate Then Program Enter '&'")
-z = input("Enter The Cmds After Reading The Instructions CareFully ( $ / # / & ) : ")
+z = ()
 
 try:
-    if z=="$":
-        a = input("The Messeage You Wannt To Encode :")
-        encode(a)
-            
-    elif z=="#":
-        a = input("The Messeage You Wannt To Decode :")
-        decode(a)
-    elif z=="&":
-        print("The Program Has Been Succesfully Terminated")
-            
+    while True:
+            z = input("Enter The Cmds After Reading The Instructions CareFully ( $ / # / & ) : ")
+            if z=="$":
+                a = input("The Messeage You Wannt To Encode :")
+                encode(a)
+                    
+            elif z=="#":
+                a = input("The Messeage You Wannt To Decode :")
+                decode(a)
+            elif z=="&":
+                print("The Program Has Been Succesfully Terminated")
+                break
+            else:
+                 raise ValueError("Invailid Cmd | Read The Instructions Carefully ")
+                     
 except Exception as e:
     print(f"Error : {e}")
 finally:
-    print("Tysm !! For Using The Program ")
+    print("The Program Is Developed by Shiv4nshh xD | Dm Him For Any Flaws Or Suggestions")
