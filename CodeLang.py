@@ -28,8 +28,9 @@ def decode(a):
     elif (len(a)>3):
        
         
-            core = a[3:-3]
-            og_msg = core[len(core) -1] + core[1:] 
+            core = a[2:-3]
+            print(core)
+            og_msg = core[len(core) -1] + core[1:len(core) - 1] 
            
             print(f"The Decoded Messeage Of Your Secret {og_msg}")
         
